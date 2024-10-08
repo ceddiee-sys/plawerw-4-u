@@ -1,0 +1,35 @@
+.flower {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+}
+
+.petal {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: pink;
+    border-radius: 50%;
+    animation: bloom 2s infinite;
+}
+
+.petal1 { transform: rotate(0deg) translate(50px); }
+.petal2 { transform: rotate(90deg) translate(50px); }
+.petal3 { transform: rotate(180deg) translate(50px); }
+.petal4 { transform: rotate(270deg) translate(50px); }
+
+.center {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    border-radius: 50%;
+    top: 35px;
+    left: 35px;
+}
+
+@keyframes bloom {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
